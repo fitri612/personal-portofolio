@@ -6,6 +6,22 @@ import Glasses from "../../assets/img/glasses.png";
 import Humble from "../../assets/img/humble.png";
 
 import "./Services.css";
+
+const onButtonClick = () => {
+  // using Java Script method to get PDF file
+  fetch("Lailatul Fitriyah_Cv.pdf").then((response) => {
+    response.blob().then((blob) => {
+      // Creating new object of PDF file
+      const fileURL = window.URL.createObjectURL(blob);
+      // Setting various property values
+      let alink = document.createElement("a");
+      alink.href = fileURL;
+      alink.download = "SamplePDF.pdf";
+      alink.click();
+    });
+  });
+};
+
 const Services = () => {
   // context
   // const theme = useContext(themeContext);
@@ -27,9 +43,9 @@ const Services = () => {
         <spane>
           i'm a web developer and designer with 2 years of experience in the field of web development and design. i have a passion for web development and design. i am also a freelancer and i am ready to work with you.
         </spane>
-        <a href="https://drive.google.com/file/d/1hezL4DrRTow7IjZn-cFsoBZOI0tPZ5Ab/view?usp=sharing" download>
-          <button className="button s-button">Download CV</button>
-        </a>
+        <button className="button s-button" onClick={onButtonClick}>
+          Download CV
+        </button>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}

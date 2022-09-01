@@ -28,6 +28,8 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+  
+
   return (
     <Navbar expand="md" className={scrolled ? "scrolled": ""}>
       <Container>

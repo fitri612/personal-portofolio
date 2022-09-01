@@ -75,9 +75,10 @@ nav.navbar {
     font-size: 18px;
     margin-left: 18px;
     border-radius: 50px;
-      position: relative;
-      background-color: transparent;
-      transition: 0.3s ease-in-out;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
   }
   .navbar-text button span {
     z-index: 1;
