@@ -15,11 +15,11 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end mt-5">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/lailatul-fitriyah-5964611a7/"><img src={navIcon1} alt="Icon" /></a>
+              <a href="https://www.facebook.com/profile.php?id=100008697874354"><img src={navIcon2} alt="Icon" /></a>
               <a href="#"><img src={navIcon3} alt="Icon" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright 2022 Lailatul Fitriyah. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

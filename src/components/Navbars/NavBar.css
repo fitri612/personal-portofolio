@@ -87,15 +87,16 @@ nav.navbar {
     width: 0%;
     height: 100%;
     position: absolute;
-    background-color: #fff;
+    background-color: var(--orange);
     left: 0;
     top: 0;
     z-index: -1;
     border-radius: 50px;
     transition: 0.9s ease-in-out;
-  }
-  .navbar-text button:hover {
+}
+.navbar-text button:hover {
     color: #0F103F;
+    outline: none;
   }
   .navbar-text button:hover::before {
       content: "";

@@ -25,11 +25,9 @@ const Services = () => {
         <span >My Awesome</span>
         <span>services</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
+          i'm a web developer and designer with 2 years of experience in the field of web development and design. i have a passion for web development and design. i am also a freelancer and i am ready to work with you.
         </spane>
-        <a href="" download>
+        <a href="https://drive.google.com/file/d/1hezL4DrRTow7IjZn-cFsoBZOI0tPZ5Ab/view?usp=sharing" download>
           <button className="button s-button">Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
@@ -70,7 +68,7 @@ const Services = () => {
             emoji={Humble}
             heading={"UI/UX"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"
             }
             color="rgba(252, 166, 31, 0.45)"
           />
