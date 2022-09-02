@@ -6,6 +6,7 @@ import Glasses from "../../assets/img/glasses.png";
 import Humble from "../../assets/img/humble.png";
 
 import "./Services.css";
+import ButtonClick from "../utils/Button/Button";
 
 const onButtonClick = () => {
   // using Java Script method to get PDF file
@@ -43,9 +44,13 @@ const Services = () => {
         <spane>
           i'm a web developer and designer with 2 years of experience in the field of web development and design. i have a passion for web development and design. i am also a freelancer and i am ready to work with you.
         </spane>
-        <button className="button s-button" onClick={onButtonClick}>
+        <ButtonClick 
+          text="Download CV"
+          onClick={onButtonClick}
+        />
+        {/* <button className="button s-button" onClick={onButtonClick}>
           Download CV
-        </button>
+        </button> */}
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}

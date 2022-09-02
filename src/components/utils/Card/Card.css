@@ -7,7 +7,9 @@
     gap: 1rem;
     align-items: center;
     text-align: center;
-    background: rgba(255, 255, 255, 0.26);
+    /* background: rgba(255, 255, 255, 0.26); */
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
     border: 7px solid var(--orangeCard);
     box-shadow: var(--boxShadow);
     border-radius: 20px;
@@ -38,7 +40,8 @@
     transform: scale(1.1);
     cursor: pointer;
 }
-.img-card{
+
+.img-card {
     width: 60% !important;
 }
 
