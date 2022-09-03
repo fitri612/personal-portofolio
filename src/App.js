@@ -16,7 +16,7 @@ function App() {
       <Banner />
       <Services />
       <Experience />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </div>
   );

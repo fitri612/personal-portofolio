@@ -45,7 +45,8 @@ const Services = () => {
           i'm a web developer and designer with 2 years of experience in the field of web development and design. i have a passion for web development and design. i am also a freelancer and i am ready to work with you.
         </spane>
         <ButtonClick 
-          text="Download CV"
+          children="Download CV"
+          className="button s-button"
           onClick={onButtonClick}
         />
         {/* <button className="button s-button" onClick={onButtonClick}>

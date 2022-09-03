@@ -36,11 +36,11 @@
     margin-top: 1rem;
 }
 
-.s-button {
+/* .s-button {
     width: 10rem;
     height: 3rem;
     margin-top: 1rem;
-}
+} */
 
 /* right sided */
 .cards {
@@ -68,8 +68,7 @@
 
 }
 
-.button {
-    /* border-radius: 34px; */
+/* .button {
     border: none;
     color: white;
     font-size: 16px;
@@ -84,7 +83,7 @@
     cursor: pointer;
     color: white;
     border: 1px solid var(--blue);
-}
+} */
 
 
 @media screen and (max-width: 480px) {

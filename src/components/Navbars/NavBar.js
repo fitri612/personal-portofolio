@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../../assets/img/nav-logo-porto.svg";
-import './NavBar.css';
+import ButtonClick from "../utils/Button/Button";
+import "./NavBar.css";
 // import navIcon1 from "../assets/img/nav-icon1.svg";
 // import navIcon2 from "../assets/img/nav-icon2.svg";
 // import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const NavBar = () => {
-  const [activaLink, setActiveLink] = useState('home');
+  const [activaLink, setActiveLink] = useState("home");
   const [scrolled, setScolled] = useState(false);
 
   useEffect(() => {
@@ -17,21 +18,19 @@ export const NavBar = () => {
       } else {
         setScolled(false);
       }
-    }
-    window.addEventListener('scroll', onScroll);
+    };
+    window.addEventListener("scroll", onScroll);
     return () => {
-      window.removeEventListener('scroll', onScroll);
-    }
-  } , []);
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
-  }
-
-  
+  };
 
   return (
-    <Navbar expand="md" className={scrolled ? "scrolled": ""}>
+    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
           {/* change with image */}
@@ -42,9 +41,33 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" className={activaLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
-            <Nav.Link href="#skills" className={activaLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-            <Nav.Link href="#projects" className={activaLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link
+              href="#home"
+              className={
+                activaLink === "home" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("home")}
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              href="#skills"
+              className={
+                activaLink === "skills" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("skills")}
+            >
+              Skills
+            </Nav.Link>
+            <Nav.Link
+              href="#projects"
+              className={
+                activaLink === "projects" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("projects")}
+            >
+              Projects
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
             {/* <div className="social-icon">
@@ -58,10 +81,15 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="" />
               </a>
             </div> */}
-            <button className="vvd" onClick={() => console.log("connect")}>
+            {/* <button className="vvd" onClick={() => console.log("connect")}>
               {" "}
               <span>Let's Go</span>{" "}
-            </button>
+            </button> */}
+
+            <ButtonClick className="vvd" onClick={() => console.log("connect")}>
+              {" "}
+              <span>Let's Go</span>{" "}
+            </ButtonClick>
           </span>
         </Navbar.Collapse>
       </Container>

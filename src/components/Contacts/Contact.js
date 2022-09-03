@@ -4,6 +4,8 @@ import './Contact.css';
 import contactImg from "../../assets/img/mess.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import ButtonClick from "../utils/Button/Button";
+
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -76,7 +78,8 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      {/* <button type="submit"><span>{buttonText}</span></button> */}
+                      <ButtonClick className="button s-button" children={buttonText} type="submit" />
                     </Col>
                     {
                       status.message &&

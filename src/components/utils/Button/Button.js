@@ -3,22 +3,22 @@ import PropTypes from 'prop-types'; // ES6
 
 
 
-const ButtonClick = ({ text, onClick }) => {
+const ButtonClick = ({ onClick, type, className, children}) => {
     return (
-        <button className="button s-button" onClick={onClick}>
-            {text}
+        <button className={className} type={type} onClick={onClick}>
+            {children}
         </button>
     );
 };
 
 ButtonClick.propTypes = {
     onClick: PropTypes.func,
-    text: PropTypes.string
+    type: PropTypes.string
 }
 
 ButtonClick.defaultProps = {
     onClick: () => { },
-    text: ""  
+    type: ""
 }
 
 export default ButtonClick;

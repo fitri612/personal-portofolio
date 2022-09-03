@@ -36,7 +36,7 @@
     color: #121212;
     opacity: 0.8;
   }
-  .contact form button {
+  /* .contact form button {
     border: none;
     color: white;
     font-size: 16px;
@@ -44,16 +44,16 @@
     background: linear-gradient(107.21deg, #C961DE 24.43%, #2954A3 68.95%);
     box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
     border-radius: 30px;
-  }
+  } */
   .contact form button span {
     z-index: 1;
     position: relative;
   }
-  .contact form button:hover {
+  /* .contact form button:hover {
     color: #fff;
     background: linear-gradient(107.21deg, #2954A3 24.43%, #C961DE 68.95%);
-  }
-  .contact form button::before {
+  } */
+  /* .contact form button::before {
     content: "";
     cursor: pointer;
     color: white;
@@ -63,7 +63,7 @@
     left: 0;
     z-index: 0;
     transition: 0.3s ease-in-out;
-  }
-  .contact form button:hover::before {
+  } */
+  /* .contact form button:hover::before {
     width: 100%;
-  }
+  } */
