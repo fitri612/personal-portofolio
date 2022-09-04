@@ -128,13 +128,8 @@ export const Contact = () => {
                           onFormUpdate("message", e.target.value)
                         }
                       >
-                        <ButtonClick
-                          className="button s-button"
-                          children={buttonText}
-                          type="submit"
-                        />
+                        {buttonText}
                       </FormTextArea>
-                    
                     </Row>
                   </form>
                 </div>

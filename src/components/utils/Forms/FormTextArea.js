@@ -1,4 +1,5 @@
 import { Col } from "react-bootstrap";
+import ButtonClick from "../Button/Button";
 const FormTextArea = ({
   size,
   className,
@@ -6,6 +7,7 @@ const FormTextArea = ({
   value,
   placeholder,
   onChange,
+  children
 }) => {
   return (
     <Col size={size} className={className}>
@@ -14,8 +16,13 @@ const FormTextArea = ({
         value={value}
         placeholder={placeholder}
         onChange={onChange}
-      >
-      </textarea>
+      ></textarea>
+
+      <ButtonClick
+        className="button s-button"
+        children={children}
+        type="submit"
+      />
     </Col>
   );
 };
